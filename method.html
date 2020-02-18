@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</title>
+  <meta name="description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  
+  <meta name="twitter:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  
+
+<meta name="author" content="Jesús Jiménez López">
+
+
+<meta name="date" content="2018-03-06">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="intro.html">
+<link rel="next" href="results.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="resumen.html"><a href="resumen.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#indices-de-vegetacion"><i class="fa fa-check"></i><b>1.1</b> Índices de vegetación</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#ndvi"><i class="fa fa-check"></i><b>1.1.1</b> NDVI</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#msavi2"><i class="fa fa-check"></i><b>1.1.2</b> MSAVI2</a></li>
+<li class="chapter" data-level="1.1.3" data-path="intro.html"><a href="intro.html#gndvi"><i class="fa fa-check"></i><b>1.1.3</b> GNDVI</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="method.html"><a href="method.html"><i class="fa fa-check"></i><b>2</b> Materiales y Métodos</a><ul>
+<li class="chapter" data-level="2.1" data-path="method.html"><a href="method.html#area-de-estudio"><i class="fa fa-check"></i><b>2.1</b> Área de estudio</a></li>
+<li class="chapter" data-level="2.2" data-path="method.html"><a href="method.html#materiales-empleados-y-operaciones-de-vuelo"><i class="fa fa-check"></i><b>2.2</b> Materiales empleados y operaciones de vuelo</a></li>
+<li class="chapter" data-level="2.3" data-path="method.html"><a href="method.html#procesamiento-de-datos"><i class="fa fa-check"></i><b>2.3</b> Procesamiento de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>3</b> Resultados de los índices de vegetación</a></li>
+<li class="chapter" data-level="4" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html"><i class="fa fa-check"></i><b>4</b> Discusión y conclusiones</a><ul>
+<li class="chapter" data-level="4.1" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#indices-de-vegetacion-1"><i class="fa fa-check"></i><b>4.1</b> Índices de vegetación</a></li>
+<li class="chapter" data-level="4.2" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#limitaciones-del-sensor-y-consideraciones-de-vuelo"><i class="fa fa-check"></i><b>4.2</b> Limitaciones del sensor y consideraciones de vuelo</a></li>
+<li class="chapter" data-level="4.3" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#calibracion-geometrica"><i class="fa fa-check"></i><b>4.3</b> Calibración geométrica</a></li>
+<li class="chapter" data-level="4.4" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#calibracion-radiometrica"><i class="fa fa-check"></i><b>4.4</b> Calibración radiométrica</a></li>
+<li class="chapter" data-level="" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i><b>5</b> Bibliografía</a></li>
+<li class="chapter" data-level="6" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>6</b> Anexo</a><ul>
+<li class="chapter" data-level="6.1" data-path="appendix.html"><a href="appendix.html#estadisticos"><i class="fa fa-check"></i><b>6.1</b> Estadísticos</a></li>
+<li class="chapter" data-level="6.2" data-path="appendix.html"><a href="appendix.html#ortomosaicos"><i class="fa fa-check"></i><b>6.2</b> Ortomosaicos</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="appendix.html"><a href="appendix.html#vuelo-1"><i class="fa fa-check"></i><b>6.2.1</b> Vuelo 1</a></li>
+<li class="chapter" data-level="6.2.2" data-path="appendix.html"><a href="appendix.html#vuelo-2"><i class="fa fa-check"></i><b>6.2.2</b> Vuelo 2</a></li>
+<li class="chapter" data-level="6.2.3" data-path="appendix.html"><a href="appendix.html#vuelo-3"><i class="fa fa-check"></i><b>6.2.3</b> Vuelo 3</a></li>
+<li class="chapter" data-level="6.2.4" data-path="appendix.html"><a href="appendix.html#vuelo-4"><i class="fa fa-check"></i><b>6.2.4</b> Vuelo 4</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="appendix.html"><a href="appendix.html#indices-de-vegetacion-2"><i class="fa fa-check"></i><b>6.3</b> Índices de vegetación</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="appendix.html"><a href="appendix.html#vuelo-1-1"><i class="fa fa-check"></i><b>6.3.1</b> Vuelo 1</a></li>
+<li class="chapter" data-level="6.3.2" data-path="appendix.html"><a href="appendix.html#vuelo-2-1"><i class="fa fa-check"></i><b>6.3.2</b> Vuelo 2</a></li>
+<li class="chapter" data-level="6.3.3" data-path="appendix.html"><a href="appendix.html#vuelo-3-1"><i class="fa fa-check"></i><b>6.3.3</b> Vuelo 3</a></li>
+<li class="chapter" data-level="6.3.4" data-path="appendix.html"><a href="appendix.html#vuelo-4-1"><i class="fa fa-check"></i><b>6.3.4</b> Vuelo 4</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="method" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Materiales y Métodos</h1>
+<div id="area-de-estudio" class="section level2">
+<h2><span class="header-section-number">2.1</span> Área de estudio</h2>
+<p>El área de estudio (ver imagen <a href="method.html#fig:areaEstudio">2.1</a>) está situada en el sector de Alamala, cantón de Catamayo (Loja, provincia de Ecuador). El clima es de tipo subtropical seco, con una temperatura media anual de 27 ºC y precipitaciones de 388 mm/año. La época seca se extiende desde el mes de mayo a enero, mientras que la temporada de lluvias abarca los meses restantes <span class="citation">(Sierra y others <a href="bibliografia.html#ref-sierra1999propuesta">1999</a>)</span>. A diferencia de otras regiones, las temperaturas más altas se registran a bajas altitudes, suavizándose conforme se avanza a cotas más altas donde suele haber una mayor disponibilidad de agua <span class="citation">(Espinosa et al. <a href="bibliografia.html#ref-Espinosa2014">2014</a>)</span>. El paisaje está dominado por comunidades dispersas de matorral arbustivo sobre una matriz de suelo desnudo, fundamentalmente por una especie del género <em>Croton</em>, perteneciente a la familia de las euforbiáceas ( <em>Croton wagneri Mull</em>). En esta área se ubican las parcelas de vegetación siguiendo un gradiente altitudinal desde los 1700 a los 1400 metros aproximadamente (según estación total). La mitad de las parcelas consideradas están protegidas frente a la herbivoría por medio de cercos.</p>
+<div class="figure"><span id="fig:areaEstudio"></span>
+<img src="figures/mapa_area_estudio.png" alt="Área de estudio" width="100%" height="100%" />
+<p class="caption">
+Figura 2.1: Área de estudio
+</p>
+</div>
+</div>
+<div id="materiales-empleados-y-operaciones-de-vuelo" class="section level2">
+<h2><span class="header-section-number">2.2</span> Materiales empleados y operaciones de vuelo</h2>
+<p>Para la toma de imágenes se utilizó un RPAS multirrotor de tipo tetracóptero (3DR Solo), con una autonomía aproximada de 15 minutos. En la parte inferior del RPAS se adaptó una cámara multiespectral Tetracam ADC micro apuntando al nadir y conectada a un módulo de GPS (ver imagen <a href="method.html#fig:camRPAS">2.2</a>) . Esta cámara permite obtener fotografías en falso color (Verde, Rojo e IRC) en el rango de los 520 a 920 nanómetros, equivalentes a Landsat TM2, TM3 y TM4. El sensor es de tipo CMOS, con una resolución de 3.2 Megapixeles (2048 x 1536 pixeles) y presenta un mecanismo de captura de tipo “rolling shutter”. Los parámetros ópticos están fijos a una distancia focal de 8,43 mm y una apertura óptica de f/3,2.</p>
+<div class="figure"><span id="fig:camRPAS"></span>
+<img src="figures/camera3drsolo.png" alt="Cámara multiespectral Tetracam ADC Micro y plataforma de vuelo 3dr Solo" width="100%" height="100%" />
+<p class="caption">
+Figura 2.2: Cámara multiespectral Tetracam ADC Micro y plataforma de vuelo 3dr Solo
+</p>
+</div>
+<p>Cada uno de los vuelos fue diseñado con el software Mission Planner (imagen <a href="method.html#fig:vuelos">2.3</a>), cubriendo las parcelas anteriormente mencionadas y en franjas horarias comprendidas entre las 11 a.m. y las 14 a.m. horas del 13 de Diciembre de 2017 (ver tabla <a href="method.html#tab:parcelas">2.1</a>).</p>
+<table>
+<caption><span id="tab:parcelas">Tabla2.1: </span>Localización de los vuelos (UTM 17S)</caption>
+<thead>
+<tr class="header">
+<th align="right">vuelo</th>
+<th align="right">este</th>
+<th align="right">norte</th>
+<th align="right">elev</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">675316.5</td>
+<td align="right">9561342</td>
+<td align="right">1725</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">675157.2</td>
+<td align="right">9560972</td>
+<td align="right">1727</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">674904.7</td>
+<td align="right">9558930</td>
+<td align="right">1580</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">673041.8</td>
+<td align="right">9557971</td>
+<td align="right">1402</td>
+</tr>
+</tbody>
+</table>
+<p>El grado de nubosidad durante este periodo pasó de cielo prácticamente despejado a cielo parcialmente cubierto. El RPAS fue configurado para volar a una velocidad aproximada de 4 m/s y a una altura media sobre el terreno de 100 metros siguiendo las misiones previamente definidas. El periodo efectivo de vuelo se mantuvo por debajo de los 10 minutos en todos los casos. La cámara fue programada para la toma de imágenes cada 2 segundos aproximadamente y configurada en ajuste automático de la velocidad de obturación, con objeto de compensar las variaciones de iluminación en el terreno. Previamente a cada vuelo se tomó una fotografía a un panel de calibración (teflón, reflectancia promedio del 99%) con objeto de calibrar radiométricamente las imágenes.</p>
+<div class="figure"><span id="fig:vuelos"></span>
+<img src="figures/parcelas_mission_planner.png" alt="Diseño de vuelos 1, 2, 3 y 4 en Mission Planner" width="100%" height="100%" />
+<p class="caption">
+Figura 2.3: Diseño de vuelos 1, 2, 3 y 4 en Mission Planner
+</p>
+</div>
+</div>
+<div id="procesamiento-de-datos" class="section level2">
+<h2><span class="header-section-number">2.3</span> Procesamiento de datos</h2>
+<p>Las imágenes fueron procesadas mediante el software PixelWrench2 (PW2) de Tetracam para producir composiciones en falso color mediante interpolación cromática de los píxeles para cada una de las bandas registradas. Inicialmente se obtuvo un archivo de coordenadas geográficas a partir del registro generado por la cámara durante el vuelo. Posteriormente se tomó una muestra del panel de calibración a partir de las imágenes tomadas para cada uno de los vuelos. El archivo de calibración generado fue utilizado para procesar las imágenes en formato RAW, que fueron convertidas a TIFF y geoetiquetadas mediante la programación de un script en Python <span class="citation">(Jiménez <a href="bibliografia.html#ref-Jimenez2018">2018</a>)</span> que hace uso del archivo de coordenadas generados por PW2. Posteriormente se descartaron las imágenes que no formaban parte del plan de vuelo o consideradas de baja calidad, según una identificación visual previa. Para generar los mosaicos se probaron diferentes programas basados en la estructura a partir del movimiento (SfM), incluyendo VisualSFM y versiones de prueba de Pix4D y Agisoft Photoscan, siendo este último el elegido para el procesamiento fotogramétrico. La mala calidad de las imágenes junto con la ausencia de puntos de control en el terreno impidió el cálculo de los parámetros de alineación/orientación de las escenas a partir de los cuales se construye la nube dispersa de puntos, por lo que se optó por seleccionar las imágenes individuales de mayor calidad que cubrieran las parcelas de interés. Únicamente para el vuelo 3 se pudieron obtener los productos fotogramétricos completos, incluyendo ortofoto y modelo digital de elevaciones (DEM).</p>
+<p>Las escenas fueron posteriormente georreferenciadas y escaladas en QGIS <span class="citation">(QGIS <a href="bibliografia.html#ref-QGISDevelopmentTeam2017">2017</a>)</span> tomando como referencia aquellas parcelas en las que se había instalado un cerco visible a su alrededor. Para la correción geométrica de las imágenes se utilizó una transformación polinómica de primer orden, seguida de una interpolación por convolución cúbica, recomendada para fotografías aéreas e imágenes de satélite. A partir de las ortofotos se extrajeron las parcelas de interés, se calcularon los índices espectrales de vegetación mediante la libreria RStoolbox <span class="citation">(R Core Team <a href="bibliografia.html#ref-R-base">2017</a>; Leutner y Horning <a href="bibliografia.html#ref-RStoolbox">2017</a>)</span> y se procedió al análisis exploratorio de los valores obtenidos. La resolución final promedio fue de 4.5 cm/pixel, suficiente para estudios de vegetación a escala local.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-method.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

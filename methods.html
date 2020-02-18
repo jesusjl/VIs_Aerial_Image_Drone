@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</title>
+  <meta name="description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  
+  <meta name="twitter:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  
+
+<meta name="author" content="Yihui Xie">
+
+
+<meta name="date" content="2018-01-17">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="intro.html">
+<link rel="next" href="resultados.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a></li>
+<li class="chapter" data-level="3" data-path="resultados.html"><a href="resultados.html"><i class="fa fa-check"></i><b>3</b> Resultados</a></li>
+<li class="chapter" data-level="4" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
+<li class="chapter" data-level="5" data-path="final-words-1.html"><a href="final-words-1.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="methods" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Methods</h1>
+<p>Para obtener las imágenes se procedió a realizar 4 vuelos independientes, correspondiente a cada una de las cuatro parcelas <a href="#parcelas"><strong>??</strong></a>, en franjas horarias comprendidas entre las 11 y las 14 horas. Los vuelos se realizaron a una altura de 100 metros. Para tal fin se utilizó el modelo de 3dr Solo, al que se le acopló una cámara multiespectral Tetracam ADC micro. Con anterioridad a cada vuelo se fotografío un panel de calibración para posteriormente, mediante el software PixelWrench2, proceder al procesamiento inicial de las fotografías.</p>
+<table>
+<caption><span id="tab:parcelas">Table 2.1: </span>Localización de parcelas</caption>
+<thead>
+<tr class="header">
+<th align="center">Parcelas</th>
+<th align="center">Coordenadas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">x1</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">x2</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">x3</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">x4</td>
+</tr>
+</tbody>
+</table>
+<p>Una vez se obtuvieron las fotografías en formato TIFF corregidas radiométricamente se procedió a la generación de la ortofoto, modelo digital de elevaciones e indicadores. Se probaron diferentes programas basados en la estructura a partir del movimiento (SfM), incluyendo VisualSFM y versiones de pruueba de Pix4D y Agisoft Photoscan.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="resultados.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-method.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

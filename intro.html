@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</title>
+  <meta name="description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  
+  <meta name="twitter:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  
+
+<meta name="author" content="Jesús Jiménez López">
+
+
+<meta name="date" content="2018-03-06">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="resumen.html">
+<link rel="next" href="method.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="resumen.html"><a href="resumen.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#indices-de-vegetacion"><i class="fa fa-check"></i><b>1.1</b> Índices de vegetación</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#ndvi"><i class="fa fa-check"></i><b>1.1.1</b> NDVI</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#msavi2"><i class="fa fa-check"></i><b>1.1.2</b> MSAVI2</a></li>
+<li class="chapter" data-level="1.1.3" data-path="intro.html"><a href="intro.html#gndvi"><i class="fa fa-check"></i><b>1.1.3</b> GNDVI</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="method.html"><a href="method.html"><i class="fa fa-check"></i><b>2</b> Materiales y Métodos</a><ul>
+<li class="chapter" data-level="2.1" data-path="method.html"><a href="method.html#area-de-estudio"><i class="fa fa-check"></i><b>2.1</b> Área de estudio</a></li>
+<li class="chapter" data-level="2.2" data-path="method.html"><a href="method.html#materiales-empleados-y-operaciones-de-vuelo"><i class="fa fa-check"></i><b>2.2</b> Materiales empleados y operaciones de vuelo</a></li>
+<li class="chapter" data-level="2.3" data-path="method.html"><a href="method.html#procesamiento-de-datos"><i class="fa fa-check"></i><b>2.3</b> Procesamiento de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>3</b> Resultados de los índices de vegetación</a></li>
+<li class="chapter" data-level="4" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html"><i class="fa fa-check"></i><b>4</b> Discusión y conclusiones</a><ul>
+<li class="chapter" data-level="4.1" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#indices-de-vegetacion-1"><i class="fa fa-check"></i><b>4.1</b> Índices de vegetación</a></li>
+<li class="chapter" data-level="4.2" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#limitaciones-del-sensor-y-consideraciones-de-vuelo"><i class="fa fa-check"></i><b>4.2</b> Limitaciones del sensor y consideraciones de vuelo</a></li>
+<li class="chapter" data-level="4.3" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#calibracion-geometrica"><i class="fa fa-check"></i><b>4.3</b> Calibración geométrica</a></li>
+<li class="chapter" data-level="4.4" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#calibracion-radiometrica"><i class="fa fa-check"></i><b>4.4</b> Calibración radiométrica</a></li>
+<li class="chapter" data-level="" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i><b>5</b> Bibliografía</a></li>
+<li class="chapter" data-level="6" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>6</b> Anexo</a><ul>
+<li class="chapter" data-level="6.1" data-path="appendix.html"><a href="appendix.html#estadisticos"><i class="fa fa-check"></i><b>6.1</b> Estadísticos</a></li>
+<li class="chapter" data-level="6.2" data-path="appendix.html"><a href="appendix.html#ortomosaicos"><i class="fa fa-check"></i><b>6.2</b> Ortomosaicos</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="appendix.html"><a href="appendix.html#vuelo-1"><i class="fa fa-check"></i><b>6.2.1</b> Vuelo 1</a></li>
+<li class="chapter" data-level="6.2.2" data-path="appendix.html"><a href="appendix.html#vuelo-2"><i class="fa fa-check"></i><b>6.2.2</b> Vuelo 2</a></li>
+<li class="chapter" data-level="6.2.3" data-path="appendix.html"><a href="appendix.html#vuelo-3"><i class="fa fa-check"></i><b>6.2.3</b> Vuelo 3</a></li>
+<li class="chapter" data-level="6.2.4" data-path="appendix.html"><a href="appendix.html#vuelo-4"><i class="fa fa-check"></i><b>6.2.4</b> Vuelo 4</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="appendix.html"><a href="appendix.html#indices-de-vegetacion-2"><i class="fa fa-check"></i><b>6.3</b> Índices de vegetación</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="appendix.html"><a href="appendix.html#vuelo-1-1"><i class="fa fa-check"></i><b>6.3.1</b> Vuelo 1</a></li>
+<li class="chapter" data-level="6.3.2" data-path="appendix.html"><a href="appendix.html#vuelo-2-1"><i class="fa fa-check"></i><b>6.3.2</b> Vuelo 2</a></li>
+<li class="chapter" data-level="6.3.3" data-path="appendix.html"><a href="appendix.html#vuelo-3-1"><i class="fa fa-check"></i><b>6.3.3</b> Vuelo 3</a></li>
+<li class="chapter" data-level="6.3.4" data-path="appendix.html"><a href="appendix.html#vuelo-4-1"><i class="fa fa-check"></i><b>6.3.4</b> Vuelo 4</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Introducción</h1>
+<p>En el campo de la teledetección ambiental se han desarrollado numerosos cocientes e índices de vegetación relacionados con el vigor y la salud de las plantas <span class="citation">(Bannari et al. <a href="bibliografia.html#ref-Bannari1995">1995</a>)</span>. Estos indicadores, en conjunto con otras métricas espectrales, han demostrado ser de gran utilidad para una amplia variedad de estudios de ecología y conservación <span class="citation">(Wang et al. <a href="bibliografia.html#ref-Wang2010">2010</a>)</span>. Desafortunadamente, las restricciones financieras y tecnológicas para la captura de imágenes obtenidas por medio de sensores a bordo de plataformas aéreas o espaciales han limitado la efectividad de la teledetección en la recolección de datos de la superficie terrestre a escalas de detalle. Como consecuencia, los RPAS se han posicionado como un complemento adecuado para estudios ambientales en áreas de pequeña extensión, permitiendo obtener imágenes a una elevada resolución espacial y temporal a un menor costo <span class="citation">(Koh y Wich <a href="bibliografia.html#ref-Koh2012">2012</a>)</span>. Este impulso ha sido especialmente notable con el desarrollo paralelo de sensores multiespectrales adaptados a aeronaves de pequeño tamaño, en conjunto con la aparición de programas informáticos que facilitan el procesamiento fotogramétrico y el análisis de grandes volúmenes de datos.</p>
+<p>El presente estudio investiga el uso de RPAS para estudios de vegetación a partir del análisis de imágenes multiespectrales adquiridas durante una campaña de vuelos en la provincia de Loja (Ecuador). Tras comentar brevemente los índices de vegetación empleados, se describe la metodología de campo y el procesamiento posterior de las imágenes. Finalmente se realiza un análisis pormenorizado de los resultados obtenidos y se proponen algunas recomendaciones de cara a futuras campañas de vuelo.</p>
+<div id="indices-de-vegetacion" class="section level2">
+<h2><span class="header-section-number">1.1</span> Índices de vegetación</h2>
+<p>Los índices de vegetación (IV) son un conjunto de combinaciones algebraicas realizadas a partir de los niveles digitales de dsitintas bandas del espectro electromagnético. Han sido diseñados con objeto de discriminar cubiertas y realzar ciertas propiedades de la vegetación relacionadas con su composición, estructura y estado fisiológico. Estos IV se fundamentan en el particular comportamiento radiométrico de las plantas, dando lugar a una curva espectral típica de la vegetación saludable [ver imagen <a href="#fig:curvaVeg"><strong>??</strong></a>]. Los pigmentos fotosintéticos absorben la mayor parte de la radiación en el visible, dentro del rango de la denominada radiación fotosintéticamente activa (400 -750 µm) o PAR. Por el contrario, las hojas reflejan un gran porcentaje de la radiación correspondiente al infrarrojo cercano (075-1.3 µm), también denominado IRC. A medida que la vegetación enferma la actividad fotosintética disminuye, de la misma forma que el contraste entre ambas bandas del espectro. La caracterización de estas variaciones de contraste constituye el fundamento de la mayoría de los IV.</p>
+<p><img src="figures/veg.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Por regla general los IV se calculan a partir de superficies de reflectancia, obtenidas previa calibración radiométrica de las imágenes y teniendo en cuenta principalmente las condiciones de iluminación en el momento de la toma, junto con otros factores dependientes de la óptica del sensor. Si bien es posible calcular los IV directamente a partir de los valores brutos de las imágenes, no es posible conceder un valor físico a los resultados <span class="citation">(Chuvieco Salinero <a href="bibliografia.html#ref-chuvieco2006teledeteccion">2006</a>)</span>, por lo que no son aptos para estudios cuantitativos de caracter multitemporal o en los que se pretenda comparar los resultados obtenidos por diferentes sensores.</p>
+<p>En este trabajo se calcularon tres índices de vegetación (ver tabla <a href="#tab:indicesVeg"><strong>??</strong></a>): índice de vegetación de diferencia normalizada (NDVI), índice modificado de vegetación ajustada al suelo (MSAVI2) e índice de vegetación de diferencia normalizada verde (GNDVI).</p>
+
+<div id="ndvi" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> NDVI</h3>
+<p>El índice más conocido y más ampliamente utilizado para el monitoreo de la vegetación es el NDVI <span class="citation">(Rouse et al. <a href="bibliografia.html#ref-Rouse1973">1973</a>)</span>, a partir del cual han surgido numerosas variantes. A menudo se relaciona directamente con otros parámetros de la superficie terrestre, incluyendo el porcentaje de cobertura del suelo, la actividad fotosintética de la planta, el contenido de agua, el índice del área foliar y la biomasa <span class="citation">(Pettorelli <a href="bibliografia.html#ref-pettorelli2013normalized">2013</a>)</span>. En otros casos ha sido empleado en estudios que tratan de predecir patrones de biodiversidad a diferentes escalas espaciales <span class="citation">(Madonsela et al. <a href="bibliografia.html#ref-Madonsela2018">2018</a>; Gillespie <a href="bibliografia.html#ref-Gillespie2011">2011</a>; Levin et al. <a href="bibliografia.html#ref-Levin2007">2007</a>)</span>.</p>
+</div>
+<div id="msavi2" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> MSAVI2</h3>
+<p>El MSAVI2 <span class="citation">(Qi et al. <a href="bibliografia.html#ref-Qi1994">1994</a>)</span> aborda algunas de las limitaciones del NDVI cuando se aplican en áreas de vegetación dispersa, con una alta superficie de suelo desnudo. A diferencia del índice de vegetación ajustado al suelo original (SAVI), no necesita especificar empíricamente el factor de corrección del brillo del suelo (L) según el grado de cobertura vegetal en el área de estudio.</p>
+</div>
+<div id="gndvi" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> GNDVI</h3>
+<p>El GNDVI <span class="citation">(Gitelson y Merzlyak <a href="bibliografia.html#ref-Gitelson1998">1998</a>)</span> es una versión modificada del NDVI, sustituyendo la banda del rojo por la del verde. Debido a su mayor sensibilidad a variaciones en la concentración de clorofila, ha sido ampliamente utilizado en agricultura de precisión para caracterizar el grado de madurez de los cultivos.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="resumen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="method.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

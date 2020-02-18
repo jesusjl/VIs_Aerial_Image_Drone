@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</title>
+  <meta name="description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución" />
+  
+  <meta name="twitter:description" content="Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores" />
+  
+
+<meta name="author" content="Jesús Jiménez López">
+
+
+<meta name="date" content="2018-03-06">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="results.html">
+<link rel="next" href="bibliografia.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Reporte final: levantamiento de imágenes aéreas mediante UAV y generación de indicadores</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="resumen.html"><a href="resumen.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#indices-de-vegetacion"><i class="fa fa-check"></i><b>1.1</b> Índices de vegetación</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#ndvi"><i class="fa fa-check"></i><b>1.1.1</b> NDVI</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#msavi2"><i class="fa fa-check"></i><b>1.1.2</b> MSAVI2</a></li>
+<li class="chapter" data-level="1.1.3" data-path="intro.html"><a href="intro.html#gndvi"><i class="fa fa-check"></i><b>1.1.3</b> GNDVI</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="method.html"><a href="method.html"><i class="fa fa-check"></i><b>2</b> Materiales y Métodos</a><ul>
+<li class="chapter" data-level="2.1" data-path="method.html"><a href="method.html#area-de-estudio"><i class="fa fa-check"></i><b>2.1</b> Área de estudio</a></li>
+<li class="chapter" data-level="2.2" data-path="method.html"><a href="method.html#materiales-empleados-y-operaciones-de-vuelo"><i class="fa fa-check"></i><b>2.2</b> Materiales empleados y operaciones de vuelo</a></li>
+<li class="chapter" data-level="2.3" data-path="method.html"><a href="method.html#procesamiento-de-datos"><i class="fa fa-check"></i><b>2.3</b> Procesamiento de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>3</b> Resultados de los índices de vegetación</a></li>
+<li class="chapter" data-level="4" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html"><i class="fa fa-check"></i><b>4</b> Discusión y conclusiones</a><ul>
+<li class="chapter" data-level="4.1" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#indices-de-vegetacion-1"><i class="fa fa-check"></i><b>4.1</b> Índices de vegetación</a></li>
+<li class="chapter" data-level="4.2" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#limitaciones-del-sensor-y-consideraciones-de-vuelo"><i class="fa fa-check"></i><b>4.2</b> Limitaciones del sensor y consideraciones de vuelo</a></li>
+<li class="chapter" data-level="4.3" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#calibracion-geometrica"><i class="fa fa-check"></i><b>4.3</b> Calibración geométrica</a></li>
+<li class="chapter" data-level="4.4" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#calibracion-radiometrica"><i class="fa fa-check"></i><b>4.4</b> Calibración radiométrica</a></li>
+<li class="chapter" data-level="" data-path="discusion-y-conclusiones.html"><a href="discusion-y-conclusiones.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i><b>5</b> Bibliografía</a></li>
+<li class="chapter" data-level="6" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>6</b> Anexo</a><ul>
+<li class="chapter" data-level="6.1" data-path="appendix.html"><a href="appendix.html#estadisticos"><i class="fa fa-check"></i><b>6.1</b> Estadísticos</a></li>
+<li class="chapter" data-level="6.2" data-path="appendix.html"><a href="appendix.html#ortomosaicos"><i class="fa fa-check"></i><b>6.2</b> Ortomosaicos</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="appendix.html"><a href="appendix.html#vuelo-1"><i class="fa fa-check"></i><b>6.2.1</b> Vuelo 1</a></li>
+<li class="chapter" data-level="6.2.2" data-path="appendix.html"><a href="appendix.html#vuelo-2"><i class="fa fa-check"></i><b>6.2.2</b> Vuelo 2</a></li>
+<li class="chapter" data-level="6.2.3" data-path="appendix.html"><a href="appendix.html#vuelo-3"><i class="fa fa-check"></i><b>6.2.3</b> Vuelo 3</a></li>
+<li class="chapter" data-level="6.2.4" data-path="appendix.html"><a href="appendix.html#vuelo-4"><i class="fa fa-check"></i><b>6.2.4</b> Vuelo 4</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="appendix.html"><a href="appendix.html#indices-de-vegetacion-2"><i class="fa fa-check"></i><b>6.3</b> Índices de vegetación</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="appendix.html"><a href="appendix.html#vuelo-1-1"><i class="fa fa-check"></i><b>6.3.1</b> Vuelo 1</a></li>
+<li class="chapter" data-level="6.3.2" data-path="appendix.html"><a href="appendix.html#vuelo-2-1"><i class="fa fa-check"></i><b>6.3.2</b> Vuelo 2</a></li>
+<li class="chapter" data-level="6.3.3" data-path="appendix.html"><a href="appendix.html#vuelo-3-1"><i class="fa fa-check"></i><b>6.3.3</b> Vuelo 3</a></li>
+<li class="chapter" data-level="6.3.4" data-path="appendix.html"><a href="appendix.html#vuelo-4-1"><i class="fa fa-check"></i><b>6.3.4</b> Vuelo 4</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Generación de indicadores de la vegetación de matorral seco en Alamala (Loja) a partir de imágenes multiespectrales de alta resolución</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="discusion-y-conclusiones" class="section level1">
+<h1><span class="header-section-number">Capítulo 4</span> Discusión y conclusiones</h1>
+<div id="indices-de-vegetacion-1" class="section level2">
+<h2><span class="header-section-number">4.1</span> Índices de vegetación</h2>
+<p>En términos generales los IV muestran valores promedios relativamente similares y considerablemente bajos. La baja productividad primaria puede ser debida a la prolongada ausencia de lluvias previa a la captura de las imágenes, dando lugar a un comportamiento más homogéneo de las comunidades vegetales independientemente de su ubicación. Sería interesante comparar los resultados frente a condiciones climáticas más benignas, caracterizadas por periodos de relativa abundacia de agua y probablemente menor insolación. La desviación típica refleja la variabilidad espacial en la productividad de los ecosistemas y no parece verse afectada en exceso por valores extremos. La presencia de picos máximos en los IV suele estar relacionada con áreas de vegetación donde la actividad fotosintética es más acusada, si bien la baja densidad de valores particularmente altos podría reflejar una deficiente calibración del sensor. Un análisis estadístico apropiado de los datos obtenidos permitiría evaluar posibles cambios en la cobertura vegetal y actividad fotosintética de las plantas en función del gradiente altitudinal y la presencia / ausencia de herbivoría. Estas diferencias podrían ser más marcadas en temporada de lluvias. Para analizar estas diferencias y obtener resultados más concluyentes convendría ampliar el rango temporal del estudio.</p>
+</div>
+<div id="limitaciones-del-sensor-y-consideraciones-de-vuelo" class="section level2">
+<h2><span class="header-section-number">4.2</span> Limitaciones del sensor y consideraciones de vuelo</h2>
+<p>La cámara multiespectral Tetracam ADC micro tiene algunas limitaciones técnicas importantes que conviene aclarar. El sensor de banda ancha está diseñado a partir de una matriz simple de fotodiodos, denominada matriz de Bayer, sensibles a cambios en la intensidad lumínica. Estos fotodiodos no son capaces de discriminar el color, por lo que generalmente se procede a una interpolación de los valores obtenidos según la disposición de un conjunto de filtros selectivos que en principio solo dejan pasar la radiación para cada uno de los tres canales disponibles. Esta configuración es habitual en la mayoría de cámaras de consumo, pero generalmente adolecen de un mayor solape espectral entre bandas. La mezcla de la señal para diferentes longitudes de onda dificulta en gran medida la discriminación de la respuesta espectral de la vegetación y la comparación con otros sensores de alta gama. Por otra parte, la cámara utiliza un mecanismo de captura de tipo “rolling shutter”, por el cual la imagen se registra siguiendo un proceso secuencial de escaneado en sentido vertical u horizontal. Este sistema suele ser propenso a una serie de distorsiones en la imagen cuando la fotografía se realiza desde plataformas móviles que se desplazan con relativa rapidez. En este estudio, las imágenes se ven severamente afectadas por este fenómeno, imposibilitando la identificación de puntos homólogos entre imágenes y por tanto la adecuada optimización de los parámetros de calibración para cada una de las tomas aéreas, condición previa al procesamiento fotogramétrico.</p>
+<p>Para minimizar el efecto rolling shutter lo más apropiado es emplear algún sistema estabilizador de la cámara que pueda amortiguar las vibraciones propias del RPAS y corregir las oscilaciones de la plataforma con objeto de mantener el sensor en posición perpendicular respecto a la superficie de estudio. Adicionalmente conviene calibrar adecuadamente el RPAS y optimizar el plan de vuelo y los principales parámetros de la operación. En este sentido, la velocidad y la altura de vuelo son los factores más importantes a tener en cuenta. Una mayor altura podría reducir teóricamente los artefactos típicos del rolling shutter, además de acortar los tiempos de vuelo en detrimento de una menor resolución espacial. Sin embargo, hay que tener en cuenta las restricciones legales que impiden volar por encima de una altura superior a los 122 metros en Ecuador. Por otro lado, una menor velocidad de vuelo aumentaría considerablemente los tiempos de la operación, aunque incidiría positivamente en la calidad de las imágenes. En cualquier caso, para parcelas de pequeño tamaño, podría ser adecuado realizar un sobrevuelo perpendicular a la zona de estudio. La altura de vuelo requerida para cubrir completamente la zona de estudio es fácilmente calculable a partir del ángulo de visión (FOV) de la cámara. Este planteamiento es fácilmente implementable, menos arriesgado y requiere un menor despliegue de recursos.</p>
+</div>
+<div id="calibracion-geometrica" class="section level2">
+<h2><span class="header-section-number">4.3</span> Calibración geométrica</h2>
+<p>El error cuadrático medio durante la fase de georreferenciación se situó por debajo de los 40 píxeles por escena, salvo para el vuelo 3, en el que debido a la mayor superficie a georreferenciar y la inadecuada distribución de los puntos de control, el error reportado fue mayor. Este error se mantuvo relativamente constante en todos los puntos para cada parcela y no debe afectar el cálculo de los índices, por lo que no se consideró necesario optimizar la georreferenciación. Sin embargo hay que tener en cuenta que los IV fueron calculados a partir de imágenes individuales, debido a la imposibilidad para generar los mosaicos. Por tanto, es de esperar que el procesamiento fotogramétrico de las imágenes mejoraría drásticamente por medio del uso de dianas adecuadamente distribuidas por el terreno y correctamente posicionadas mediante GPS diferencial o estación total.Esto es particularmente importante fuera de áreas urbanas, donde suele ser más dificil identificar puntos homólogos entre imágenes.</p>
+</div>
+<div id="calibracion-radiometrica" class="section level2">
+<h2><span class="header-section-number">4.4</span> Calibración radiométrica</h2>
+<p>El cálculo de reflectividades es especialmente importante cuando se trabaja en diferentes condiciones de iluminación, fechas o sensores, por lo que la mejora en el procedimiento de calibración radiométrica de las imágenes debería ser una de las necesidades prioritarias en estudios de vegetación. En caso contrario los IV pueden ofrecer una interpretación cualitativa del estado de la vegetación en un periodo de tiempo discreto. En términos generales, sería recomendable usar valores de exposición fijos durante toda la operación y en función de las condiciones de iluminación in situ, con objeto de facilitar los procesos de corrección radiométrica posteriores. El uso de paneles de calibración con reflectividades conocidas permitiría aproximar los niveles digitales de las imágenes a valores físicos, siguiendo alguno de los procedimientos establecidos en otros estudios. Por lo general el método de calibración empírica suele dar buenos resultados. En este estudio se utilizó una muestra de los niveles digitales obtenidos a partir de una placa de teflón con anterioridad a cada vuelo. Para obtener una muestra sufciente es necesario que la fotografía cubra la mayor parte de la placa y que no aparezca sobreexpuesta. Sin embargo consideramos que este método no es suficiente garantía para obtener valores sólidos de reflectancia. Actualmente la calibración radiométrica de las imágenes obtenidas mediante RPAS está en fase constante de investigación. Se esperar que con la llegada de nuevos sensores y métodos se facilite el procedimiento.</p>
+</div>
+<div id="agradecimientos" class="section level2 unnumbered">
+<h2>Agradecimientos</h2>
+<p>Agradecimientos por el apoyo recibido en los trabajos de campo al personal de la Universidad Técnica Particular de Loja (UTPL) y la empresa Kea Electronics.</p>
+
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="results.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliografia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-discussion.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
